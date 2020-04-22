@@ -149,5 +149,6 @@ export default [
     'useNicks',
     'useStunTurn',
     'webrtcIceTcpDisable',
-    'webrtcIceUdpDisable'
+    'webrtcIceUdpDisable',
+    'externalAppURL'
 ].concat(extraConfigWhitelist);
