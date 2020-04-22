@@ -54,6 +54,12 @@ export function getInviteURL(stateOrGetState: Function | Object): string {
         throw new Error('Can not get invite URL - the app is not ready');
     }
 
+    const link = state['features/base/config'].externalAppURL;
+
+    if (link) {
+        return link;
+    }
+
     return getURLWithoutParams(locationURL).href;
 }
 
