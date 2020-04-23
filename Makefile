@@ -13,7 +13,7 @@ STYLES_MAIN = css/main.scss
 WEBPACK = ./node_modules/.bin/webpack
 WEBPACK_DEV_SERVER = ./node_modules/.bin/webpack-dev-server
 
-all: compile deploy clean
+all: compile deploy
 
 compile:
 	$(WEBPACK) -p
